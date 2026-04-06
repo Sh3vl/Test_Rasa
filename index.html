@@ -47,11 +47,12 @@
 
         <div class="header-down">
 
-            <div class="logo-box">
-                <img src="/media/img/logo.svg" alt="Logo" class="logo">
-            </div>
-
             <div class="down-menu-left">
+
+                <div class="logo-box">
+                    <img src="/media/img/logo.svg" alt="Logo" class="logo">
+                </div>
+
                 <div class="link-box">
                     <a href="inDevPage.html" class="link">Кредиты</a>
                     <a href="inDevPage.html" class="link">Вклады</a>
@@ -94,7 +95,11 @@
     <main class="main">
         <section class="banner">
             <nav class="breadCrumbs">
-
+                <a class="breadCrumbs__noActive" href="inDevPage.html">Главная</a>
+                <p class="breadCrumbs__arrow">></p>
+                <a class="breadCrumbs__noActive" href="inDevPage.html">Кредит</a>
+                <p class="breadCrumbs__arrow">></p>
+                <a class="breadCrumbs__active" href="inDevPage.html">Автокредит</a>
             </nav>
 
             <h2 class="banner__head">
@@ -111,52 +116,57 @@
         </section>
 
         <section class="search">
-            <h2 class="search__head">
-                Выбери себе авто
-            </h2>
+            <div class="search-up">
+                <h2 class="search-up__head">
+                    Выбери себе авто
+                </h2>
 
-            <div class="filter-car-box">
-                <details open class="filter-car">
-                    <summary class="filter-car__head">Свернуть список машин ^</summary>
-                    <div class="filtre-car-card">
-
-                    </div>
-                </details>
-            </div>
-
-            <div class="search-stamp">
-                <h4 class="search-stamp__head">
-                    Марка
-                </h4>
-
-                <div class="filter-stamp-box">
-                    <details class="filter-stamp">
-                        <summary class="filter-stamp__head">Выбрать</summary>
-                        <div class="">
-                            <input id="checkStamp1" type="checkbox">
-                            <label for="checkStamp1">AC</label>
+                <div class="filter-car-box">
+                    <details open class="filter-car">
+                        <summary class="filter-car__head">Свернуть список машин</summary>
+                        <div class="filtre-car-card">
+                            asdfadfasdf
                         </div>
                     </details>
                 </div>
-            </div>
-
-            <div class="search-year">
-                <h4 class="search-year__head">
-                    Год
-                </h4>
-
 
             </div>
 
-            <div class="search-prirce">
-                <h4 class="search-prirce__head">
-                    Цена
-                </h4>
+            <div class="search-down">
+                <div class="search-stamp">
+                    <h4 class="search-stamp__head">
+                        Марка
+                    </h4>
 
-                <div class="sort-price">
-                    <input placeholder="от" type="number">
-                    <p class="">-</p>
-                    <input placeholder="до" type="number">
+                    <div class="filter-stamp-box">
+                        <details class="filter-stamp">
+                            <summary class="filter-stamp__head">Выбрать</summary>
+                            <div class="filter-stamp-stamps">
+                                <input id="checkStamp1" type="checkbox">
+                                <label for="checkStamp1">AC</label>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="search-year">
+                    <h4 class="search-year__head">
+                        Год
+                    </h4>
+
+
+                </div>
+
+                <div class="search-prirce">
+                    <h4 class="search-prirce__head">
+                        Цена
+                    </h4>
+
+                    <div class="sort-price">
+                        <input placeholder="от" type="number">
+                        <p class="">-</p>
+                        <input placeholder="до" type="number">
+                    </div>
                 </div>
             </div>
 

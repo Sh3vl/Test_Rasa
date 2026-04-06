@@ -4,7 +4,6 @@
     text-decoration: none
     border: 0px
     box-shadow: 0px
-    box-sizing: content-box
 
 @font-face
     font-family: 'Plex-Sans'
@@ -12,20 +11,20 @@
 
 body
     font-family: Plex-Sans
+    background-color: #F7F9FA
 
 summary
     display: block
     summary::marker
         display: none
 
-.wrapper
-    margin: 0 20%
-
 .header
     height: 120px
 
     &-up
-        display: inline-flex
+        display: flex
+        align-items: center
+        justify-content: space-between
         padding: 16px 60px
         height: 20px
 
@@ -33,6 +32,7 @@ summary
     display: flex
     gap: 16px
     height: 20px
+    width: 450px
     &__link
         color: #8D8D8D
         font-size: 15px
@@ -43,9 +43,7 @@ summary
 
 .up-menu-right
     display: inline-flex
-    justify-content: end
     gap: 16px
-    width: 310px
     height: 20px
     &__link
         color: #760135
@@ -61,16 +59,20 @@ summary
     color: #0D0D0D
 
 .header-down
-    display: inline-flex
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 20px 60px
 
 .logo
-    margin: 18px 24px 18px 60px
 
 .down-menu-left
-    margin: 24px 0
+    display: flex
+    align-items: center
+    gap: 16px
 
 .link-box
-    display: inline-flex
+    display: flex
     gap: 16px
 
 .link
@@ -80,24 +82,111 @@ summary
     margin-top: 10px
     position: absolute
     display: flex
-    gap: 10px
     flex-direction: column
+    gap: 10px
 
 .down-menu-right
-    margin: 24px 0
+    display: flex
+    align-items: center
 
 .phone-link
-    display: inline-flex
+    display: flex
     margin-right: 16px
     font-weight: 500
     gap: 8px
     color: #25B456
 
 .bank-link
-    display: inline-flex
+    display: flex
     font-weight: 500
     gap: 8px
     color: #760135
+
+.banner
+    background-image: url(/media/img/background1.svg)
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    padding: 16px 60px
+
+    &__head
+        margin-top: 172px
+        font-size: 38px
+        font-weight: 600
+
+    &__text
+        margin-top: 16px
+        font-size: 15px
+        font-weight: 400
+
+    &__btn
+        margin: 24px 0 112px 0
+        width: 230px
+        height: 48px
+        color: #fff
+        font-size: 15px
+        font-weight: 500
+        border-radius: 8px
+        background-color: #760135
+
+.breadCrumbs
+    display: flex
+    align-items: center
+    gap: 8px
+
+    &__noActive
+        font-size: 13px
+        color: #111111
+        opacity: 50%
+
+    &__arrow
+        color: #111111
+        opacity: 50%
+
+    &__active
+        font-size: 13px
+        color: #111111
+
+.search
+    padding: 20px 172px 0 172px
+
+.search-up
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    &__head
+        font-size: 32px
+        font-weight: 500
+
+.filter-car__head
+    border: 1px solid #000
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 15px
+    font-weight: 500
+    width: 256px
+    height: 40px
+    color: #760135
+
+.filtre-car-card
+    position: absolute
+
+.search-down
+    display: flex
+    align-items: center
+    margin-top: 24px
+
+.filter-stamp
+    display: flex
+    align-items: center
+    width: 440px
+    height: 40px
+    background-color: #F3F3F5
+
+.filter-stamp-stamps
+    position: absolute
 
 .block
     padding: 16px
@@ -131,8 +220,7 @@ summary
                 transition-duration: 0.3s
 
 @media (max-width: 360px )
-    .wrapper
-        margin: 0 20px
+
     .block
         &__head
             font-size: 16px
