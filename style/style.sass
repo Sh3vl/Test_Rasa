@@ -1,0 +1,153 @@
+*
+    padding: 0
+    margin: 0
+    text-decoration: none
+    border: 0px
+    box-shadow: 0px
+    box-sizing: content-box
+
+@font-face
+    font-family: 'Plex-Sans'
+    src: url(/media/font/IBMPlexSans-Medium.ttf)
+
+body
+    font-family: Plex-Sans
+
+summary
+    display: block
+    summary::marker
+        display: none
+
+.wrapper
+    margin: 0 20%
+
+.header
+    height: 120px
+
+    &-up
+        display: inline-flex
+        padding: 16px 60px
+        height: 20px
+
+.up-menu-left
+    display: flex
+    gap: 16px
+    height: 20px
+    &__link
+        color: #8D8D8D
+        font-size: 15px
+        &:hover
+            color: #313133
+    &__line-vert
+        border: 1px solid #E0E1E6
+
+.up-menu-right
+    display: inline-flex
+    justify-content: end
+    gap: 16px
+    width: 310px
+    height: 20px
+    &__link
+        color: #760135
+        font-weight: 500
+
+.filter-city__items
+    position: absolute
+
+.line
+    border: 1px solid #E0E1E6
+
+.EnPage
+    color: #0D0D0D
+
+.header-down
+    display: inline-flex
+
+.logo
+    margin: 18px 24px 18px 60px
+
+.down-menu-left
+    margin: 24px 0
+
+.link-box
+    display: inline-flex
+    gap: 16px
+
+.link
+    color: #0D0D0D
+
+.filter-service__items
+    margin-top: 10px
+    position: absolute
+    display: flex
+    gap: 10px
+    flex-direction: column
+
+.down-menu-right
+    margin: 24px 0
+
+.phone-link
+    display: inline-flex
+    margin-right: 16px
+    font-weight: 500
+    gap: 8px
+    color: #25B456
+
+.bank-link
+    display: inline-flex
+    font-weight: 500
+    gap: 8px
+    color: #760135
+
+.block
+    padding: 16px
+    display: flex
+    flex-direction: column
+    gap: 16px
+    position: absolute
+    top: 30%
+    right: 30%
+    left: 30%
+    background-color: #f4f2f2
+    border-radius: 16px
+    // border: 1px solid #000
+
+    &__head
+        text-align: center
+    &__text
+        font-size: 24px
+    &__box
+        &-btnOnMainPage
+            max-width: 124px
+            max-height: 40px
+            min-width: 102px
+            min-height: 34px
+            font-size: 18px
+            color: #fff
+            border-radius: 8px
+            background-color: #760135
+            &:hover
+                background-color: #65012e
+                transition-duration: 0.3s
+
+@media (max-width: 360px )
+    .wrapper
+        margin: 0 20px
+    .block
+        &__head
+            font-size: 16px
+        &__text
+            font-size: 16px
+        &__box
+            &-btnOnMainPage
+                font-size: 16px
+
+@media (max-width: 764px )
+    .block
+        &__head
+            font-size: 26px
+        &__text
+            font-size: 22px
+        &__box
+            &-btnOnMainPage
+                font-size: 16px
