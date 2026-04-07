@@ -140,7 +140,10 @@
 
                     <div class="filter-stamp-box">
                         <details class="filter-stamp">
-                            <summary class="filter-stamp__head">Выбрать</summary>
+                            <summary class="filter-stamp__heading">
+                                <p class="filter-stamp__head">Выбрать</p>
+                                <p class="filter-stamp__head">></p>
+                            </summary>
                             <div class="filter-stamp-stamps">
                                 <input id="checkStamp1" type="checkbox">
                                 <label for="checkStamp1">AC</label>
@@ -154,18 +157,30 @@
                         Год
                     </h4>
 
+                    <div class="filter-year-box">
+                        <details class="filter-stamp">
+                            <summary class="filter-year__heading">
+                                <p class="filter-year__head">Выбрать</p>
+                                <p class="filter-year__head">></p>
+                            </summary>
+                            <div class="filter-year-years">
+                                <input id="checkYear1" type="checkbox">
+                                <label for="checkYear1">2026</label>
+                            </div>
+                        </details>
+                    </div>
 
                 </div>
 
-                <div class="search-prirce">
-                    <h4 class="search-prirce__head">
+                <div class="search-price">
+                    <h4 class="search-price__head">
                         Цена
                     </h4>
 
                     <div class="sort-price">
-                        <input placeholder="от" type="number">
-                        <p class="">-</p>
-                        <input placeholder="до" type="number">
+                        <input class="sort-price__fieldInput" placeholder="От" type="number">
+                        <p class="sort-price__line"></p>
+                        <input class="sort-price__fieldInput" placeholder="До" type="number">
                     </div>
                 </div>
             </div>
@@ -195,14 +210,16 @@
                 </p>
             </div>
 
-            <div class="sum">
-                <p class="sum__head">
-                    Сумма
-                </p>
+            <div class="lineUpDown">
+                <div class="sum">
+                    <p class="sum__head">
+                        Сумма
+                    </p>
 
-                <p class="sum__text">
-                    от 200 000 до 5 000 000 руб.
-                </p>
+                    <p class="sum__text">
+                        от 200 000 до 5 000 000 руб.
+                    </p>
+                </div>
             </div>
 
             <div class="bet">
@@ -215,17 +232,19 @@
                 </p>
             </div>
 
-            <div class="purchase">
-                <p class="purchase__head">
-                    Возможность приобретения авто у частного лица
-                </p>
+            <div class="lineUpDown">
+                <div class="purchase">
+                    <p class="purchase__head">
+                        Возможность приобретения авто у частного лица
+                    </p>
+                </div>
             </div>
 
             <a href="inDevPage.html" class="general-terms__link">Смотреть более подробные условия кредита ></a>
         </section>
 
         <section class="questions">
-            <img src="#" alt="?" class="questions__img">
+            <img src="media/img/questions.svg" alt="?" class="questions__img">
 
             <h2 class="questions__head">
                 Часто задаваемые вопросы
@@ -238,8 +257,8 @@
                         <p class="filter-questions__text2">Стрелка</p>
                     </summary>
 
-                    <div class="">
-
+                    <div class="filter-questions__question">
+                        alkfdalkfalk;ds
                     </div>
                 </details>
             </div>
@@ -247,70 +266,78 @@
     </main>
 
     <footer class="footer">
-        <div class="footer-left">
-            <div class="right">
-                <h3 class="head">Частным лицам</h3>
-                <ul class="list">
-                    <li class="list__link">Банковские Карты</li>
-                    <li class="list__link">Кредиты</li>
-                    <li class="list__link">Вклады</li>
-                    <li class="list__link">Ипотека</li>
-                    <li class="list__link">Страхование</li>
-                    <li class="list__link">Сейфовые ячейки</li>
-                    <li class="list__link">Открытие счетов</li>
-                    <li class="list__link">Обмен валюты</li>
-                    <li class="list__link">Переводы</li>
-                    <li class="list__link">Маркет плейсы</li>
-                </ul>
+        <div class="footer-up">
+            <div class="footer-left">
+                <div class="right">
+                    <h3 class="head">Частным лицам</h3>
+                    <ul class="list">
+                        <li class="list__link">Банковские Карты</li>
+                        <li class="list__link">Кредиты</li>
+                        <li class="list__link">Вклады</li>
+                        <li class="list__link">Ипотека</li>
+                        <li class="list__link">Страхование</li>
+                        <li class="list__link">Сейфовые ячейки</li>
+                        <li class="list__link">Открытие счетов</li>
+                        <li class="list__link">Обмен валюты</li>
+                        <li class="list__link">Переводы</li>
+                        <li class="list__link">Маркет плейсы</li>
+                    </ul>
+                </div>
+
+                <div class="center">
+                    <h3 class="head">Бизнесу</h3>
+                    <ul class="list">
+                        <li class="list__link">Экспресс-МСБ</li>
+                        <li class="list__link">Расчетно-кассовое обслуживание</li>
+                        <li class="list__link">Онлайн резевирование счета</li>
+                        <li class="list__link">Внешнеэкономическая деятельность</li>
+                        <li class="list__link">Зарплатный проект</li>
+                        <li class="list__link">Овердрафт</li>
+                        <li class="list__link">Кредит</li>
+                        <li class="list__link">Лизинг</li>
+                        <li class="list__link">Депозиты</li>
+                        <li class="list__link">Банковские гарантии</li>
+                        <li class="list__link">Факторинг</li>
+                    </ul>
+                </div>
+
+                <div class="right">
+                    <h3 class="head">О банке</h3>
+                    <ul class="list">
+                        <li class="list__link">Новости</li>
+                        <li class="list__link">Вакансии</li>
+                        <li class="list__link">Офисы</li>
+                        <li class="list__link">Инвестиционный услуги</li>
+                        <li class="list__link">О банке</li>
+                        <li class="list__link">Реквизиты</li>
+                        <li class="list__link">Тарифы</li>
+                        <li class="list__link">Монеты</li>
+                        <li class="list__link">Непрофильные активы</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="center">
-                <h3 class="head">Бизнесу</h3>
-                <ul class="list">
-                    <li class="list__link">Экспресс-МСБ</li>
-                    <li class="list__link">Расчетно-кассовое обслуживание</li>
-                    <li class="list__link">Онлайн резевирование счета</li>
-                    <li class="list__link">Внешнеэкономическая деятельность</li>
-                    <li class="list__link">Зарплатный проект</li>
-                    <li class="list__link">Овердрафт</li>
-                    <li class="list__link">Кредит</li>
-                    <li class="list__link">Лизинг</li>
-                    <li class="list__link">Депозиты</li>
-                    <li class="list__link">Банковские гарантии</li>
-                    <li class="list__link">Факторинг</li>
-                </ul>
+
+            <div class="footer-right">
+                <div class="lineVertical"></div>
+                <div class="number">
+                    <a href="inDevPage.html" class="footer-right__phone-link">8 800 775-56-06</a>
+                    <p class="footer-right__text">Для звонков по России (бесплатно)</p>
+                </div>
+
+                <div class="number">
+                    <a href="inDevPage.html" class="footer-right__phone-link">+7 495 232-37-23</a>
+                    <p class="footer-right__text">Для блокировки карт (круглосуточно)</p>
+                </div>
+
+                <div class="icon-link-box">
+                    <img src="media/img/telegram.svg" alt="Telegram" class="icon-link">
+                    <img src="media/img/wk.svg" alt="WK" class="icon-link">
+                    <img src="media/img/study.svg" alt="Odl" class="icon-link">
+                    <img src="media/img/twiter.svg" alt="Twiter" class="icon-link">
+                </div>
+
             </div>
-
-            <div class="right">
-                <h3 class="head">О банке</h3>
-                <ul class="list">
-                    <li class="list__link">Новости</li>
-                    <li class="list__link">Вакансии</li>
-                    <li class="list__link">Офисы</li>
-                    <li class="list__link">Инвестиционный услуги</li>
-                    <li class="list__link">О банке</li>
-                    <li class="list__link">Реквизиты</li>
-                    <li class="list__link">Тарифы</li>
-                    <li class="list__link">Монеты</li>
-                    <li class="list__link">Непрофильные активы</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-right">
-            <a href="inDevPage.html" class="footer-right__phone-link">8 800 775-56-06</a>
-            <p class="footer-right__text">Для звонков по России (бесплатно)</p>
-
-            <a href="inDevPage.html" class="footer-right__phone-link">+7 495 232-37-23</a>
-            <p class="footer-right__text">Для блокировки карт (круглосуточно)</p>
-
-            <div class="icon-link-box">
-                <img src="#" alt="Telegram" class="icon-link">
-                <img src="#" alt="WK" class="icon-link">
-                <img src="#" alt="Odl" class="icon-link">
-                <img src="#" alt="Twiter" class="icon-link">
-            </div>
-
         </div>
 
         <div class="footer-info">
@@ -329,19 +356,20 @@
             <a href="inDevPage.html" class="footer-info__link">Информация о процентах ставках по договорам банковского
                 вклада с физическими лицами</a>
             <a href="inDevPage.html" class="footer-info__link">Информация, связанная с совершением Банком действий,
-                предусмотренных пунктом 5.6 статьи 7 ФЗ N 115Ы</a>
+                предусмотренных пунктом 5.6 статьи 7 ФЗ N 115</a>
         </div>
 
         <div class="footer-down">
             <div class="footer-down-left">
                 <p class="footer-down-left__text">
-                    С 2004-2021, АО «Солид Банк», официальный сайт, генеральная лицензия ЦБ РФ N 1329.
+                    © 2004-2021, АО «Солид Банк», официальный сайт, генеральная лицензия ЦБ РФ N 1329.
                 </p>
             </div>
 
             <div class="footer-down-right">
-                <p class="footer-down-right__text">Разработка сайта -</p>
-                <a href="https://rasa.pro/" class="footer-down-right__link">RASA</a>
+                <p class="footer-down-right__text">Разработка сайта - <a href="https://rasa.pro/"
+                        class="footer-down-right__link">RASA</a></p>
+
             </div>
         </div>
     </footer>

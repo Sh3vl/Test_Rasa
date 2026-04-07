@@ -18,6 +18,16 @@ summary
     summary::marker
         display: none
 
+input[type="number"]
+    -moz-appearance: textfield
+    -webkit-appearance: textfield
+    appearance: textfield
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+    -webkit-appearance: none
+    margin: 0
+
 .header
     height: 120px
 
@@ -178,15 +188,294 @@ summary
     align-items: center
     margin-top: 24px
 
-.filter-stamp
+.search-stamp__head
+    margin-bottom: 8px
+    font-size: 15px
+    font-weight: 500
+
+.filter-stamp-box
+    margin-right: 24px
+
+.filter-stamp__heading
     display: flex
     align-items: center
+    justify-content: space-between
+    padding: 0 16px
     width: 440px
     height: 40px
     background-color: #F3F3F5
+    border-radius: 8px
+    border: 1px solid #ECEDF0
+
+.filter-stamp__head
+    font-size: 13px
+    font-weight: 400
+    opacity: 50%
 
 .filter-stamp-stamps
     position: absolute
+    background-color: #fff
+    width: 440px
+
+.search-year
+    margin-right: 16px
+
+.search-year__head
+    margin-bottom: 8px
+    font-size: 15px
+    font-weight: 500
+
+.filter-year-box
+    margin-right: 24px
+
+.filter-year__heading
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0 16px
+    width: 220px
+    height: 40px
+    background-color: #F3F3F5
+    border-radius: 8px
+    border: 1px solid #ECEDF0
+
+.filter-year__head
+    font-size: 13px
+    font-weight: 400
+    opacity: 50%
+
+.filter-year-years
+    position: absolute
+    background-color: #fff
+    width: 220px
+
+.search-price__head
+    margin-bottom: 8px
+    font-size: 15px
+    font-weight: 500
+
+.sort-price
+    display: flex
+    align-items: center
+    gap: 18px
+
+    &__fieldInput
+        padding: 0 16px
+        width: 170px
+        height: 40px
+        font-size: 13px
+        font-weight: 400
+        background-color: #F3F3F5
+        border: 1px solid #ECEDF0
+        border-radius: 8px
+
+    &__line
+        width: 18px
+        border: 3px solid #E6E7EB
+        border-radius: 3px
+
+.info
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 24px 170px 0px 170px
+    height: 100px
+    background-color: #fff
+    border-radius: 16px
+
+    &__text
+        font-size: 15px
+        font-weight: 400
+
+    &__link
+        margin-left: 6px
+        font-size: 15px
+        font-weight: 500
+        color: #760135
+
+.general-terms
+    margin: 60px 170px 0 170px
+    padding: 60px
+    height: 300px
+    background-color: #fff
+    border-radius: 16px
+
+    &__head
+        font-size: 24px
+        font-weight: 600
+        color: #760135
+
+    &__link
+        margin: 26px 0 40px 0
+        float: right
+        font-size: 15px
+        font-weight: 500
+        color: #760135
+
+.term
+    padding: 24px 0 20px 0
+    display: flex
+    align-items: center
+    gap: 330px
+
+    &__head
+        font-size: 15px
+        font-weight: 500
+
+    &__text
+        font-size: 15px
+        font-weight: 400
+
+.sum
+    display: flex
+    align-items: center
+    gap: 318px
+
+    &__head
+        font-size: 15px
+        font-weight: 500
+
+    &__text
+        font-size: 15px
+        font-weight: 400
+
+.bet
+    margin: 20px 0
+    display: flex
+    align-items: center
+    gap: 152px
+
+    &__head
+        font-size: 15px
+        font-weight: 500
+
+    &__text
+        font-size: 15px
+        font-weight: 400
+
+.lineUpDown
+    padding: 20px 0
+    border-top: 1px solid #E0E1E6
+    border-bottom: 1px solid #E0E1E6
+
+.questions
+    display: flex
+    align-items: center
+    margin: 110px 170px 100px 170px
+
+    &__head
+        margin: 0 64px 0 16px
+        width: 216px
+        height: 62px
+        font-size: 24px
+        font-weight: 500
+
+.filter-questions-box
+    flex: 1
+
+.filter-questions__head
+    padding: 16px 24px
+    display: flex
+    justify-content: space-between
+    font-size: 15px
+    font-weight: 400
+    background-color: #fff
+    border-radius: 16px
+
+.filter-questions__question
+    position: absolute
+
+.footer
+    padding: 36px 60px
+    background-color: #fff
+
+.footer-up
+    display: flex
+    align-items: center
+
+.footer-left
+    display: flex
+    gap: 36px
+
+.right
+    width: 320px
+
+.center
+    width: 302px
+
+.head
+    font-size: 17px
+    font-weight: 500
+
+.list
+    margin-top: 16px
+    display: flex
+    flex-direction: column
+    gap: 10px
+
+    &__link
+        font-size: 15px
+        font-weight: 400
+        color: #606266
+        list-style-type: none
+
+.footer-right
+    display: flex
+    flex-direction: column
+    gap: 24px
+    padding-left: 36px
+
+    &__phone-link
+        font-size: 24px
+        font-weight: 500
+        color: #760135
+
+    &__text
+        margin-top: 8px
+        font-size: 13px
+        font-weight: 400
+        color: #BABCC2
+
+.lineVertical
+    border: 1px solid #E6E7EB
+
+.icon-link-box
+    display: flex
+    gap: 16px
+
+.footer-info
+    padding-bottom: 16px
+    margin-top: 54px
+    border-bottom: 1px solid #E0E1E6
+    &__link
+        font-size: 12px
+        font-weight: 400
+        color: #7E7F85
+        text-decoration: underline
+
+.footer-down
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 16px
+
+.footer-down-left
+    &__text
+        font-size: 13px
+        font-weight: 400
+        color: #606266
+
+.footer-down-right
+    display: flex
+    align-items: center
+
+    &__text
+        font-size: 13px
+        font-weight: 400
+        color: #606266
+
+    &__link
+        color: #00BFFF
 
 .block
     padding: 16px
