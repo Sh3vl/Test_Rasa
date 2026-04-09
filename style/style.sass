@@ -29,7 +29,6 @@ input[type="number"]::-webkit-inner-spin-button
     margin: 0
 
 .header
-    height: 120px
 
     &-up
         display: flex
@@ -41,8 +40,8 @@ input[type="number"]::-webkit-inner-spin-button
 .up-menu-left
     display: flex
     gap: 16px
-    height: 20px
-    width: 450px
+    max-height: 20px
+    max-width: 450px
     &__link
         color: #8D8D8D
         font-size: 15px
@@ -54,7 +53,7 @@ input[type="number"]::-webkit-inner-spin-button
 .up-menu-right
     display: inline-flex
     gap: 16px
-    height: 20px
+    max-height: 20px
     &__link
         color: #760135
         font-weight: 500
@@ -73,8 +72,6 @@ input[type="number"]::-webkit-inner-spin-button
     align-items: center
     justify-content: space-between
     padding: 20px 60px
-
-.logo
 
 .down-menu-left
     display: flex
@@ -117,6 +114,7 @@ input[type="number"]::-webkit-inner-spin-button
     background-size: cover
     background-position: center
     background-repeat: no-repeat
+    min-width: 400px
     padding: 16px 60px
 
     &__head
@@ -169,19 +167,60 @@ input[type="number"]::-webkit-inner-spin-button
         font-size: 32px
         font-weight: 500
 
+.filter-car
+    position: relative
+
 .filter-car__head
-    border: 1px solid #000
     display: flex
     justify-content: center
     align-items: center
-    font-size: 15px
-    font-weight: 500
     width: 256px
     height: 40px
+    font-size: 15px
+    font-weight: 500
+    color: #760135
+    border-radius: 4px
+    border: 1px solid #000
+
+.bestCard-left
+    padding: 40px 40px 40px 0
+
+.bestCard
+    margin-top: 24px
+    background-color: #575757
+
+.bestOffer
+    font-size: 15px
+    font-weight: 500
+    color: #25B456
+
+.nameCar
+    margin: 8px 0 16px 0
+    font-size: 24px
+    font-weight: 500
+    color: #111111
+
+.descCar
+    font-size: 15px
+    font-weight: 400
+    color: #282828
+
+.priceCar
+    margin-top: 21px
+    font-size: 24px
+    font-weight: 500
     color: #760135
 
-.filtre-car-card
-    position: absolute
+.linkMoreInfo
+    margin-top: 22px
+    display: flex
+    align-items: center
+    gap: 8px
+    color: #760135
+
+.bestCard-right
+    display: flex
+    align-items: center
 
 .search-down
     display: flex
@@ -437,7 +476,8 @@ input[type="number"]::-webkit-inner-spin-button
         color: #BABCC2
 
 .lineVertical
-    border: 1px solid #E6E7EB
+    border-left: 1px solid #E6E7EB
+    height: 300px
 
 .icon-link-box
     display: flex
@@ -508,6 +548,21 @@ input[type="number"]::-webkit-inner-spin-button
                 background-color: #65012e
                 transition-duration: 0.3s
 
+@media (max-width: 768px )
+    .none
+        display: none
+
+    .header
+
+    .block
+        &__head
+            font-size: 26px
+        &__text
+            font-size: 22px
+        &__box
+            &-btnOnMainPage
+                font-size: 16px
+
 @media (max-width: 360px )
 
     .block
@@ -515,16 +570,6 @@ input[type="number"]::-webkit-inner-spin-button
             font-size: 16px
         &__text
             font-size: 16px
-        &__box
-            &-btnOnMainPage
-                font-size: 16px
-
-@media (max-width: 764px )
-    .block
-        &__head
-            font-size: 26px
-        &__text
-            font-size: 22px
         &__box
             &-btnOnMainPage
                 font-size: 16px
