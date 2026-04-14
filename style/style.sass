@@ -6,7 +6,7 @@
     box-shadow: 0px
 
 @font-face
-    font-family: 'Plex-Sans'
+    font-family: "Plex-Sans"
     src: url(/media/font/IBMPlexSans-Medium.ttf)
 
 body
@@ -15,38 +15,47 @@ body
 
 summary
     display: block
-    summary::marker
-        display: none
 
-input[type="number"]
+summary summary::marker
+    display: none
+
+input[type=number]
     -moz-appearance: textfield
     -webkit-appearance: textfield
     appearance: textfield
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button
     -webkit-appearance: none
     margin: 0
 
-.header
+.wrapper
+    margin: 0 auto
+    padding: 0 60px
 
-    &-up
-        display: flex
-        align-items: center
-        justify-content: space-between
-        padding: 16px 60px
-        height: 20px
+    &-center
+        margin: 0 auto
+        padding: 0 172px
+
+/*!!!------ header ------!!!*/
+.header-up
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 20px 0
 
 .up-menu-left
     display: flex
     gap: 16px
     max-height: 20px
-    max-width: 450px
+
     &__link
         color: #8D8D8D
         font-size: 15px
-        &:hover
-            color: #313133
+
+    &__link:hover
+        color: #313133
+
     &__line-vert
         border: 1px solid #E0E1E6
 
@@ -54,6 +63,12 @@ input[type="number"]::-webkit-inner-spin-button
     display: inline-flex
     gap: 16px
     max-height: 20px
+
+    &
+        display: inline-flex
+        gap: 16px
+        max-height: 20px
+
     &__link
         color: #760135
         font-weight: 500
@@ -71,7 +86,6 @@ input[type="number"]::-webkit-inner-spin-button
     display: flex
     align-items: center
     justify-content: space-between
-    padding: 20px 60px
 
 .down-menu-left
     display: flex
@@ -95,10 +109,11 @@ input[type="number"]::-webkit-inner-spin-button
 .down-menu-right
     display: flex
     align-items: center
+    gap: 16px
+    padding: 20px 0
 
 .phone-link
     display: flex
-    margin-right: 16px
     font-weight: 500
     gap: 8px
     color: #25B456
@@ -109,33 +124,14 @@ input[type="number"]::-webkit-inner-spin-button
     gap: 8px
     color: #760135
 
-.banner
+/*!!!------ banner ------!!!*/
+.banner-box
     background-image: url(/media/img/background1.svg)
     background-size: cover
     background-position: center
     background-repeat: no-repeat
     min-width: 400px
-    padding: 16px 60px
-
-    &__head
-        margin-top: 172px
-        font-size: 38px
-        font-weight: 600
-
-    &__text
-        margin-top: 16px
-        font-size: 15px
-        font-weight: 400
-
-    &__btn
-        margin: 24px 0 112px 0
-        width: 230px
-        height: 48px
-        color: #fff
-        font-size: 15px
-        font-weight: 500
-        border-radius: 8px
-        background-color: #760135
+    padding: 16px 0
 
 .breadCrumbs
     display: flex
@@ -155,39 +151,164 @@ input[type="number"]::-webkit-inner-spin-button
         font-size: 13px
         color: #111111
 
+.banner__head
+    margin-top: 172px
+    font-size: 38px
+    font-weight: 600
+
+.banner__text
+    margin-top: 16px
+    font-size: 15px
+    font-weight: 400
+
+.banner__btn
+    margin: 24px 0 112px 0
+    width: 230px
+    height: 48px
+    color: #fff
+    font-size: 15px
+    font-weight: 500
+    border-radius: 8px
+    background-color: #760135
+    cursor: pointer
+
+/*!!!------ search ------!!!*/
 .search
-    padding: 20px 172px 0 172px
+    padding: 40px 0
 
-.search-up
-    display: flex
-    align-items: center
-    justify-content: space-between
+    &-up
+        display: flex
+        align-items: center
+        justify-content: space-between
 
-    &__head
+    &-up__head
         font-size: 32px
         font-weight: 500
-
-.filter-car
-    position: relative
 
 .filter-car__head
     display: flex
     justify-content: center
     align-items: center
-    width: 256px
+    max-width: 328px
+    min-width: 256px
     height: 40px
     font-size: 15px
     font-weight: 500
     color: #760135
+    background-color: #fff
     border-radius: 4px
-    border: 1px solid #000
+    cursor: pointer
 
-.bestCard-left
-    padding: 40px 40px 40px 0
+.search-down
+    display: flex
+    align-items: center
+    gap: 16px
+    margin-top: 24px
+
+    &-up
+        display: flex
+        align-items: center
+        gap: 24px
+
+.search-stamp__head
+    margin-bottom: 8px
+    font-size: 15px
+    font-weight: 500
+
+.filter-stamp__heading
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0 16px
+    width: 440px
+    min-width: 156px
+    height: 40px
+    background-color: #F3F3F5
+    border-radius: 8px
+    border: 1px solid #ECEDF0
+
+.filter-stamp__head
+    font-size: 13px
+    font-weight: 400
+    opacity: 50%
+
+.filter-stamp-stamps
+    position: absolute
+    background-color: #fff
+    max-width: 440px
+    min-width: 156px
+
+.search-year__head
+    margin-bottom: 8px
+    font-size: 15px
+    font-weight: 500
+
+.filter-year__heading
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0 16px
+    width: 220px
+    min-width: 156px
+    height: 40px
+    background-color: #F3F3F5
+    border-radius: 8px
+    border: 1px solid #ECEDF0
+
+.filter-year__head
+    font-size: 13px
+    font-weight: 400
+    opacity: 50%
+
+.filter-year-years
+    position: absolute
+    background-color: #fff
+    max-width: 220px
+    min-width: 156px
+
+.search-price__head
+    margin-bottom: 8px
+    font-size: 15px
+    font-weight: 500
+
+.sort-price
+    display: flex
+    align-items: center
+    gap: 18px
+
+    &__fieldInput
+        padding: 0 16px
+        max-width: 170px
+        min-width: 156px
+        height: 40px
+        font-size: 13px
+        font-weight: 400
+        background-color: #F3F3F5
+        border: 1px solid #ECEDF0
+        border-radius: 8px
+
+    &__line
+        width: 15px
+        border: 3px solid #E6E7EB
+        border-radius: 3px
+
+.filter-car-bestCard
+    margin-top: 24px
+    display: flex
+    flex-direction: column
+    gap: 16px
 
 .bestCard
-    margin-top: 24px
-    background-color: #575757
+    display: flex
+    gap: 100px
+    padding: 40px
+    background-color: #fff
+    border-radius: 16px
+
+    &-right
+        display: flex
+        align-items: center
+        gap: 54px
 
 .bestOffer
     font-size: 15px
@@ -218,107 +339,59 @@ input[type="number"]::-webkit-inner-spin-button
     gap: 8px
     color: #760135
 
-.bestCard-right
-    display: flex
-    align-items: center
+.bestCard__img
+    max-width: 308px
 
-.search-down
-    display: flex
-    align-items: center
-    margin-top: 24px
+.bestCard__buttonArrow
+    opacity: 50%
 
-.search-stamp__head
-    margin-bottom: 8px
-    font-size: 15px
+.card-box
+    display: flex
+    flex-wrap: wrap
+    gap: 16px
+    justify-content: center
+
+.card
+    padding: 16px
+    background-color: #fff
+    border-radius: 16px
+
+    &__img
+        max-width: 322px
+
+.car-name
+    margin: 16px 0
+    font-size: 17px
     font-weight: 500
 
-.filter-stamp-box
-    margin-right: 24px
+.car-city
+    margin-bottom: 8px
+    color: #282828
+    font-size: 15px
+    font-weight: 400
 
-.filter-stamp__heading
+.card-down
     display: flex
     align-items: center
     justify-content: space-between
-    padding: 0 16px
-    width: 440px
-    height: 40px
-    background-color: #F3F3F5
-    border-radius: 8px
-    border: 1px solid #ECEDF0
 
-.filter-stamp__head
+.car-price
+    font-size: 17px
+    font-weight: 500
+    color: #760135
+
+.card__link-moreInfo
+    color: #282828
     font-size: 13px
     font-weight: 400
-    opacity: 50%
-
-.filter-stamp-stamps
-    position: absolute
-    background-color: #fff
-    width: 440px
-
-.search-year
-    margin-right: 16px
-
-.search-year__head
-    margin-bottom: 8px
-    font-size: 15px
-    font-weight: 500
-
-.filter-year-box
-    margin-right: 24px
-
-.filter-year__heading
-    display: flex
-    align-items: center
-    justify-content: space-between
-    padding: 0 16px
-    width: 220px
-    height: 40px
-    background-color: #F3F3F5
-    border-radius: 8px
-    border: 1px solid #ECEDF0
-
-.filter-year__head
-    font-size: 13px
-    font-weight: 400
-    opacity: 50%
-
-.filter-year-years
-    position: absolute
-    background-color: #fff
-    width: 220px
-
-.search-price__head
-    margin-bottom: 8px
-    font-size: 15px
-    font-weight: 500
-
-.sort-price
-    display: flex
-    align-items: center
-    gap: 18px
-
-    &__fieldInput
-        padding: 0 16px
-        width: 170px
-        height: 40px
-        font-size: 13px
-        font-weight: 400
-        background-color: #F3F3F5
-        border: 1px solid #ECEDF0
-        border-radius: 8px
-
-    &__line
-        width: 18px
-        border: 3px solid #E6E7EB
-        border-radius: 3px
 
 .info
     display: flex
     justify-content: center
     align-items: center
-    margin: 24px 170px 0px 170px
-    height: 100px
+    margin: 24px 0px
+    max-height: 100px
+    height: 72px
     background-color: #fff
     border-radius: 16px
 
@@ -333,8 +406,8 @@ input[type="number"]::-webkit-inner-spin-button
         color: #760135
 
 .general-terms
-    margin: 60px 170px 0 170px
-    padding: 60px
+    margin-top: 60px
+    padding: 40px
     height: 300px
     background-color: #fff
     border-radius: 16px
@@ -345,7 +418,7 @@ input[type="number"]::-webkit-inner-spin-button
         color: #760135
 
     &__link
-        margin: 26px 0 40px 0
+        margin-top: 26px
         float: right
         font-size: 15px
         font-weight: 500
@@ -400,11 +473,16 @@ input[type="number"]::-webkit-inner-spin-button
 .questions
     display: flex
     align-items: center
-    margin: 110px 170px 100px 170px
+    margin: 110px 0 100px 0
+    gap: 62px
+
+    &-up
+        display: flex
+        align-items: center
+        gap: 16px
 
     &__head
-        margin: 0 64px 0 16px
-        width: 216px
+        max-width: 216px
         height: 62px
         font-size: 24px
         font-weight: 500
@@ -413,9 +491,11 @@ input[type="number"]::-webkit-inner-spin-button
     flex: 1
 
 .filter-questions__head
-    padding: 16px 24px
     display: flex
+    align-items: center
     justify-content: space-between
+    padding: 0 24px
+    height: 52px
     font-size: 15px
     font-weight: 400
     background-color: #fff
@@ -424,8 +504,8 @@ input[type="number"]::-webkit-inner-spin-button
 .filter-questions__question
     position: absolute
 
-.footer
-    padding: 36px 60px
+.footer-box
+    padding: 36px 0
     background-color: #fff
 
 .footer-up
@@ -438,9 +518,15 @@ input[type="number"]::-webkit-inner-spin-button
 
 .right
     width: 320px
+    min-width: 170px
 
 .center
     width: 302px
+    min-width: 266px
+
+.left
+    width: 302px
+    min-width: 266px
 
 .head
     font-size: 17px
@@ -462,7 +548,7 @@ input[type="number"]::-webkit-inner-spin-button
     display: flex
     flex-direction: column
     gap: 24px
-    padding-left: 36px
+    margin-left: 36px
 
     &__phone-link
         font-size: 24px
@@ -487,6 +573,7 @@ input[type="number"]::-webkit-inner-spin-button
     padding-bottom: 16px
     margin-top: 54px
     border-bottom: 1px solid #E0E1E6
+
     &__link
         font-size: 12px
         font-weight: 400
@@ -499,22 +586,21 @@ input[type="number"]::-webkit-inner-spin-button
     justify-content: space-between
     margin-top: 16px
 
-.footer-down-left
-    &__text
+    &-left__text
         font-size: 13px
         font-weight: 400
         color: #606266
 
-.footer-down-right
-    display: flex
-    align-items: center
+    &-right
+        display: flex
+        align-items: center
 
-    &__text
+    &-right__text
         font-size: 13px
         font-weight: 400
         color: #606266
 
-    &__link
+    &-right__link
         color: #00BFFF
 
 .block
@@ -528,48 +614,41 @@ input[type="number"]::-webkit-inner-spin-button
     left: 30%
     background-color: #f4f2f2
     border-radius: 16px
-    // border: 1px solid #000
 
     &__head
+        font-size: 28px
         text-align: center
+
     &__text
         font-size: 24px
-    &__box
-        &-btnOnMainPage
-            max-width: 124px
-            max-height: 40px
-            min-width: 102px
-            min-height: 34px
-            font-size: 18px
-            color: #fff
-            border-radius: 8px
-            background-color: #760135
-            &:hover
-                background-color: #65012e
-                transition-duration: 0.3s
 
-@media (max-width: 768px )
+    &__box-btnOnMainPage
+        max-width: 124px
+        max-height: 40px
+        min-width: 102px
+        min-height: 34px
+        font-size: 18px
+        color: #fff
+        border-radius: 8px
+        background-color: #760135
+        cursor: pointer
+
+    &__box-btnOnMainPage:hover
+        background-color: #65012e
+        transition-duration: 0.3s
+
+@media (max-width: 768px)
     .none
         display: none
 
-    .header
+    .wrapper
+        padding: 0 16px
 
-    .block
-        &__head
-            font-size: 26px
-        &__text
-            font-size: 22px
-        &__box
-            &-btnOnMainPage
-                font-size: 16px
+        &-center
+            padding: 0 16px
 
-@media (max-width: 360px )
+    .header-up
+        justify-content: center
 
-    .block
-        &__head
-            font-size: 16px
-        &__text
-            font-size: 16px
-        &__box
-            &-btnOnMainPage
-                font-size: 16px
+    .up-menu-left
+        justify-content: space-around
