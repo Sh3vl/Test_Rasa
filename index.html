@@ -24,7 +24,7 @@
                     <a href="inDevPage.html" class="up-menu-right__link">8 (900) 755-56-06</a>
 
                     <p class="filter-city__head">
-                        <img src="media/img/GeoPosition.svg" alt=""> Хабаровск
+                        <img src="media/img/otherIcons/GeoPosition.svg" alt=""> Хабаровск
                     </p>
 
 
@@ -40,7 +40,7 @@
                 <div class="down-menu-left">
 
                     <div class="logo-box">
-                        <img src="media/img/logo.svg" alt="Logo" class="logo">
+                        <img src="media/img/otherIcons/logo.svg" alt="Logo" class="logo">
                     </div>
 
                     <div class="link-box">
@@ -54,14 +54,15 @@
                         <a href="inDevPage.html" class="link">Страхование</a>
                         <div class="filter-service-box">
                             <details class="filter-service">
-                                <summary class="filter-servive__head">Сервисы
-                                    <img src="media/img/service.svg" alt="arrow down">
+                                <summary class="filter-service__head">Сервисы
+                                    <img src="media/img/arrows/service.svg" alt="arrow down">
                                 </summary>
                                 <div class="filter-service__items">
                                     <a href="/inDevPage.html">Сервис 1</a>
                                     <a href="/inDevPage.html">Сервис 2</a>
                                     <a href="/inDevPage.html">Сервис 3</a>
                                     <a href="/inDevPage.html">Сервис 4</a>
+                                    <a href="/inDevPage.html">Сервис 5</a>
                                 </div>
                             </details>
                         </div>
@@ -70,12 +71,12 @@
 
                 <div class="down-menu-right">
                     <a class="phone-link" href="/inDevPage.html">
-                        <img src="media/img/phone.svg" alt="phone" class="phone-link__img">
+                        <img src="media/img/otherIcons/phone.svg" alt="phone" class="phone-link__img">
                         Заказать звонок
                     </a>
 
                     <a href="/inDevPage.html" class="bank-link">
-                        <img src="media/img/goBank.svg" alt="bank-photo" class="bank-link__img">
+                        <img src="media/img/otherIcons/goBank.svg" alt="bank-photo" class="bank-link__img">
                         Интернет-банк
                     </a>
                 </div>
@@ -119,7 +120,8 @@
                         </h2>
 
 
-                        <button id="btnCards" class="filter-car__head">Свернуть список машин</button>
+                        <button id="btnCards" class="filter-car__head">Свернуть список машин <img
+                                src="media/img/arrows/arrow-up.svg" alt=""></button>
 
 
                     </div>
@@ -135,11 +137,34 @@
                                     <details class="filter-stamp">
                                         <summary class="filter-stamp__heading">
                                             <p class="filter-stamp__head">Выбрать</p>
-                                            <p class="filter-stamp__head">></p>
+                                            <img class="filter-stamp__head" src="media/img/arrows/arrow-down.svg"
+                                                alt="arrow">
                                         </summary>
                                         <div class="filter-stamp-stamps">
-                                            <input id="checkStamp1" type="checkbox">
-                                            <label for="checkStamp1">AC</label>
+                                            <div class="stamps-check-box">
+                                                <input id="checkStamp1" type="checkbox">
+                                                <label for="checkStamp1">Заглушка 1</label>
+                                            </div>
+
+                                            <div class="stamps-check-box">
+                                                <input id="checkStamp2" type="checkbox">
+                                                <label for="checkStamp2">Заглушка 2</label>
+                                            </div>
+
+                                            <div class="stamps-check-box">
+                                                <input id="checkStamp3" type="checkbox">
+                                                <label for="checkStamp3">Заглушка 3</label>
+                                            </div>
+
+                                            <div class="stamps-check-box">
+                                                <input id="checkStamp4" type="checkbox">
+                                                <label for="checkStamp4">Заглушка 4</label>
+                                            </div>
+
+                                            <div class="stamps-check-box">
+                                                <input id="checkStamp5" type="checkbox">
+                                                <label for="checkStamp5">Заглушка 5</label>
+                                            </div>
                                         </div>
                                     </details>
                                 </div>
@@ -154,11 +179,35 @@
                                     <details class="filter-stamp">
                                         <summary class="filter-year__heading">
                                             <p class="filter-year__head">Выбрать</p>
-                                            <p class="filter-year__head">></p>
+                                            <img class="filter-year__head" src="media/img/arrows/arrow-down.svg"
+                                                alt="arrow">
+
                                         </summary>
                                         <div class="filter-year-years">
-                                            <input id="checkYear1" type="checkbox">
-                                            <label for="checkYear1">2026</label>
+                                            <div class="year-check-box">
+                                                <input id="checkYear1" type="checkbox">
+                                                <label for="checkYear1">2026г.</label>
+                                            </div>
+
+                                            <div class="year-check-box">
+                                                <input id="checkYear1" type="checkbox">
+                                                <label for="checkYear1">2025г.</label>
+                                            </div>
+
+                                            <div class="year-check-box">
+                                                <input id="checkYear1" type="checkbox">
+                                                <label for="checkYear1">2024г.</label>
+                                            </div>
+
+                                            <div class="year-check-box">
+                                                <input id="checkYear1" type="checkbox">
+                                                <label for="checkYear1">2023г.</label>
+                                            </div>
+
+                                            <div class="year-check-box">
+                                                <input id="checkYear1" type="checkbox">
+                                                <label for="checkYear1">2022г.</label>
+                                            </div>
                                         </div>
                                     </details>
                                 </div>
@@ -181,9 +230,12 @@
                         </div>
                     </div>
 
-                    <div id="bestCard-box" class="filter-car-bestCard">
+                    <div class="filter-car-bestCard">
+                        <div id="bestCard-box" class="bestCard-box"></div>
 
+                        <div id="card-box" class="card-box"></div>
                     </div>
+
 
                 </div>
             </div>
@@ -259,7 +311,7 @@
                 <div class="questions">
 
                     <div class="questions-up">
-                        <img src="media/img/questions.svg" alt="?" class="questions__img">
+                        <img src="media/img/otherIcons/questions.svg" alt="?" class="questions__img">
 
                         <h2 class="questions__head">
                             Часто задаваемые вопросы
@@ -274,7 +326,11 @@
                             </summary>
 
                             <div class="filter-questions__question">
-                                alkfdalkfalk;ds
+                                <a href="inDevPage.html">Вопрос 1</a>
+                                <a href="inDevPage.html">Вопрос 2</a>
+                                <a href="inDevPage.html">Вопрос 3</a>
+                                <a href="inDevPage.html">Вопрос 4</a>
+                                <a href="inDevPage.html">Вопрос 5</a>
                             </div>
                         </details>
                     </div>
@@ -351,10 +407,21 @@
                         </div>
 
                         <div class="icon-link-box">
-                            <img src="media/img/telegram.svg" alt="Telegram" class="icon-link">
-                            <img src="media/img/wk.svg" alt="WK" class="icon-link">
-                            <img src="media/img/study.svg" alt="Odl" class="icon-link">
-                            <img src="media/img/twiter.svg" alt="Twiter" class="icon-link">
+                            <a href="inDevPage.html">
+                                <img src="media/img/otherIcons/telegram.svg" alt="Telegram" class="icon-link">
+                            </a>
+
+                            <a href="inDevPage.html">
+                                <img src="media/img/otherIcons/wk.svg" alt="WK" class="icon-link">
+                            </a>
+
+                            <a href="inDevPage.html">
+                                <img src="media/img/otherIcons/study.svg" alt="Odl" class="icon-link">
+                            </a>
+
+                            <a href="inDevPage.html">
+                                <img src="media/img/otherIcons/twiter.svg" alt="Twiter" class="icon-link">
+                            </a>
                         </div>
 
                     </div>

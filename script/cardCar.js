@@ -1,9 +1,10 @@
 const btnCardsEl = document.getElementById('btnCards')
 const bestCardEl = document.getElementById('bestCard-box')
+const cardEl = document.getElementById('card-box')
 
 let isOpen = true;
 
-function renderCards() {
+function renderBestCards() {
     bestCardEl.innerHTML = "";
 
     DataBestCar.forEach(item => {
@@ -24,37 +25,45 @@ function renderCards() {
         <img class="bestCard__img" src="${item.carImg}" alt="car">
         <img class="bestCard__buttonArrow" src="${item.arImg}" alt=">">
     </div>
-    `
+    `;
 
         bestCardEl.appendChild(bestCardBlock);
     });
 
-    DataCar.forEach(item => {
-        const cardBlock = document.createElement("div");
-        cardBlock.className = "card-box";
-
-        cardBlock.innerHTML = `
-        <div class="card">
-            <img src="${item.carImg}" alt="car" class="card__img">
-            <h4 class="car-name">${item.name}</h4>
-            <p class="car-city">г. ${item.city}</p>
-
-            <div class="card-down">
-            <p class="car-price">${item.price} ₽</p>
-            <a href="${item.link}" class="card__link-moreInfo">Подробнее</a>    
-            </div>
-        </div>
-        `
-    });
-
 };
 
+function renderCards() {
+    cardEl.innerHTML = "";
+
+    DataCar.forEach(item => {
+        const cardBlock = document.createElement("div");
+        cardBlock.className = "card";
+
+        cardBlock.innerHTML = `
+            <img src="${item.carImg}" alt="car" class="card__img">
+            <h4 class="car-name">${item.name}</h4>
+            <p class="car-city">${item.city}</p>
+
+            <div class="card-down">
+                <p class="car-price">${item.price} ₽</p>
+                <a href="${item.link}" class="card__link-moreInfo">Подробнее</a>    
+            </div>
+        `;
+
+        cardEl.appendChild(cardBlock);
+    });
+}
+
 renderCards();
+renderBestCards();
+
+console.log("cardEl", cardEl);
+console.log("DataCar", DataCar);
 
 btnCardsEl.addEventListener('click', () => {
     isOpen = !isOpen;
     bestCardEl.style.display = isOpen ? "" : "none";
+    cardEl.style.display = isOpen ? "" : "none";
 
-
-    btnCardsEl.textContent = isOpen ? "Свернуть список машин" : "Открыть список машин";
+    btnCardsEl.textContent = isOpen ? "Свернуть список машин ^" : "Открыть список машин";
 });
